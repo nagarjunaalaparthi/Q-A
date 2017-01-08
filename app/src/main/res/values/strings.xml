@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Q&amp;A</string>
+    <string name="app_name_splash">Quetiond And Answers</string>
+    <string name="welcome_to_qa"><![CDATA[Welcome to Q&A]]></string>
+    <string name="start_test">Start Test</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="next">Next</string>
+    <string name="restart">Restart</string>
+    <string name="Report">Report</string>
+    <string name="correct">Correct : %1$s</string>
+    <string name="wrong">Wrong : %1$s</string>
+</resources>

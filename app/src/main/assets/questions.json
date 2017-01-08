@@ -1,0 +1,46 @@
+[
+	{
+		"question" : "Former Australian captain Mark Taylor has had several nicknames over his playing career. Which of the following was NOT one of them?",
+		"type" : "multiple",
+		"options" : ["Tubby", "Stodge", "Helium Bat", "Stumpy"],
+		"answer" : "Stumpy"
+	},
+	{
+		"question" : "Which was the 1st non Test playing country to beat India in an international match?",
+		"type" : "multiple",
+		"options" : ["Canada", "Sri Lanka", "Zimbabwe", "East Africa"],
+		"answer" : "Sri Lanka"
+	},
+	{
+		"question" : "How many world cups won by India in One Day international Cricket?",
+		"type" : "input",
+		"answer" : "2"
+	},
+	{
+		"question" : "Which county did Ravi Shastri play for?",
+		"type" : "multiple",
+		"options" : ["Glamorgan", "Leicestershire", "Gloucestershire", "Lancashire"],
+		"answer" : "Glamorgan"
+	},
+	{
+		"question" : "Enter Number of overs per day in a test match?",
+		"type" : "input",
+		"answer" : "90"
+	},
+	{
+		"question" : "Does India conducted commonwealth games?",
+		"type" : "yesorno",
+		"answer" : "yes"
+	},
+	{
+		"question" : "Enter Number of Medals won by India in 2016 Olympics?",
+		"type" : "input",
+		"answer" : "2"
+	},
+	{
+		"question" : "Track and field star Carl Lewis won how many gold medals at the 1984 Olympic games?",
+		"type" : "multiple",
+		"options" : ["Two", "Three", "Four", "Eight"],
+		"answer" : "Four"
+	}
+]

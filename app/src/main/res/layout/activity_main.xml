@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:contentInsetStartWithNavigation="0dp"
+            android:gravity="center"
+            android:titleTextColor="@android:color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/background"
+                android:textSize="@dimen/default_text_size"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/welcome_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerInParent="true"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/welcome_header_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/start_test"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="@string/welcome_to_qa"
+                android:textColor="@color/background"
+                android:textSize="@dimen/header_text_size" />
+
+            <Button
+                android:id="@+id/start_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/button_drawable"
+                android:paddingEnd="@dimen/activity_vertical_margin"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:text="@string/start_test"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/default_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/question_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:visibility="gone">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/question_progress"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/question_margin"
+                android:elevation="@dimen/default_margin"
+                app:cardCornerRadius="@dimen/default_margin">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/default_margin">
+
+                    <TextView
+                        android:id="@+id/question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/question_margin"
+                        android:padding="@dimen/default_margin"
+                        android:text="@string/welcome_to_qa"
+                        android:textColor="@color/text_color_dark"
+                        android:textSize="@dimen/default_text_size" />
+
+                    <RadioGroup
+                        android:id="@+id/multi_question_radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center|start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <RadioButton
+                            android:id="@+id/radio_button_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/default_margin"
+                            android:textColor="@color/text_color_dark"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/default_margin"
+                            android:layout_marginTop="@dimen/default_margin"
+                            android:textColor="@color/text_color_dark"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/default_margin"
+                            android:layout_marginTop="@dimen/default_margin"
+                            android:textColor="@color/text_color_dark"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/default_margin"
+                            android:textColor="@color/text_color_dark"
+                            android:textSize="@dimen/default_text_size" />
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/yes_no_question_radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center|start"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <RadioButton
+                            android:id="@+id/radio_button_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/default_margin"
+                            android:layout_marginEnd="@dimen/question_margin"
+                            android:text="@string/yes"
+                            android:textColor="@color/text_color_dark"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/default_margin"
+                            android:layout_marginStart="@dimen/question_margin"
+                            android:text="@string/no"
+                            android:textColor="@color/text_color_dark"
+                            android:textSize="@dimen/default_text_size" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/input_ediText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/question_margin"
+                        android:background="@drawable/edit_text_background"
+                        android:gravity="center|top"
+                        android:inputType="number"
+                        android:padding="@dimen/question_margin"
+                        android:textSize="@dimen/question_margin"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:enabled="false"
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/question_margin"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:padding="@dimen/activity_vertical_margin"
+                        android:text="@string/next"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/default_text_size" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <ProgressBar
+                android:id="@+id/question_progress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_margin"
+                android:layout_alignParentBottom="true"
+                android:progressDrawable="@drawable/progress_drawable" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>
